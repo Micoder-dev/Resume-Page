@@ -176,7 +176,10 @@
     .frame{transform:rotate(-2.5deg)}
     .frame img{
       width:100%;height:100%;object-fit:cover;border-radius:18px;
+      filter:grayscale(.85) contrast(1.05) brightness(.92);
+      transition:filter .5s;
     }
+    .frame:hover img{filter:grayscale(0) contrast(1) brightness(1)}
     .tag{
       position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);
       font-family:'JetBrains Mono',monospace;font-size:11.5px;white-space:nowrap;
